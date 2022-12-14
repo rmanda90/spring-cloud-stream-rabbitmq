@@ -1,9 +1,11 @@
-package com.mpk.samples.springcloudstreamrabbitmq.model;
+package com.mpk.samples.springcloudstreamrabbitmq.objects;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 @Data
@@ -11,10 +13,9 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-@JsonIgnoreProperties(ignoreUnknown = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
-    private String id;
-    private String empName;
+public class Course_Student {
+    private int studentId;
+    private int courseId;
 }
