@@ -3,8 +3,8 @@ spring:
     name: rabbit-mq #service name, this will appear in eureka server homepage
   profiles:
     active: dev,local
-#  config:
-#    import: optional:configserver:http://localhost:8888
+  config:
+    import: optional:configserver:http://localhost:8888
   rabbitmq:
     host: localhost
     port: 5672
